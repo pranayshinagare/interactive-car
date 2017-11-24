@@ -1,0 +1,373 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+body {
+    padding: 0px;
+    font: 13px "Arial", sans-serif;
+    margin: 0px;
+}
+.container-fluid{
+    padding: 0;
+
+}
+.navbar-default{
+    border-radius: 0;
+    background: #f5f5f5;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+#imgWrapper img{
+  transform: scale(1);
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+}
+.introText{
+  margin-left:38px;
+  top:308px;
+  position:absolute;
+  display:none;
+  color: #222327;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s linear;
+}
+#reset{
+  margin-left:4px;
+  top:309px;
+  cursor:pointer;
+  position:absolute;
+}
+#autoRotate{
+  margin-left: 553px;
+  top: 298px;
+  cursor: pointer;
+  position: absolute;
+}
+.touchZoom{
+    position: absolute;
+    top: 300px;
+    margin-left: 248px;
+    display: none;
+}
+#zoomIn, #zoomOut{
+  display: inline-block;
+  padding: 6px;
+  cursor: pointer;
+}
+.loader{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #191818;
+    top: -341px;
+    opacity: 0.5;
+    display: block;
+    z-index: 9999;
+}
+.loader img {
+  width: 35px;
+  margin-top: 142px;
+  margin-left: 47%;
+}
+.testing img{
+    height: 70px;
+    width: 70px;
+}
+#superblaze {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 506px;
+  width: 900px;
+  z-index: 2;
+}
+
+#scenediv {
+    position: absolute;
+    text-align: left;
+    padding: 0px 0px;
+    margin: 0;
+    width: 900px;
+    height: 506px;
+}
+.btn {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    /*background: #f9f9f9;*/
+}
+.option1 {
+    left: 15px;
+    top: 415px;
+}
+.option4 {
+    left: 15px;
+    top: 215px;
+}
+
+.mode2 {
+    left: 815px;
+    top: 215px;
+}
+
+#mode2Btn {
+    background-image: url("../images_gl/mode2_up.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#mode2BtnDown {
+    background-image: url("../images_gl/mode2_down.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.mode3 {
+    left: 815px;
+    top: 315px;
+}
+
+#mode3Btn {
+    background-image: url("../images_gl/flash_up.png");
+    background-repeat: no-repeat;
+}
+
+#mode3BtnDown {
+    background-image: url("../images_gl/flash_down.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.mode4 {
+    left: 815px;
+    top: 115px;
+}
+
+#mode4Btn {
+    background-image: url("../images_gl/mode4_up.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#mode4BtnDown {
+    background-image: url("../images_gl/mode4_down.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.reset {
+    left: 815px;
+    top: 415px;
+}
+#resetBtn {
+    background-image: url("../images_gl/reset_up.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#resetBtnDown {
+    background-image: url("../images_gl/reset_down.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+div.transbox {
+    position: absolute;
+    top: 439px;
+    left: 180px;
+    width: 495px;
+    height: 100px;
+    margin: 0px;
+}
+div.bar {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    background-color: #CCCCCC;
+    width: 1px;
+    height: 5px;
+    overflow: hidden;
+}
+div.loadtext {
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    color: #CCCCCC;
+    font-family: Arial;
+    font-size: 10px;
+}
+img.thumbnail {
+    float: left;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #CCCCCC;
+    padding: 8px 0px 0px 0px;
+    display: inline;
+    background-color: #212121;
+}
+div.thumbHolder {
+    position: absolute;
+    top: 439px;
+    left: 180px;
+    width: 525px;
+    
+    padding: 0px;
+    margin: 0px;
+    display: none;
+    line-height: 0;
+}
+.rotateLeft {
+    position: absolute;
+    top: 235px;
+    left: 20px;
+}
+.rotateRight {
+    position: absolute;
+    top: 235px;
+    left: 840px;
+}
+a {
+    outline: none;
+}
+#sliderframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.shotSelector {
+    background: #CCCCCC;
+    position: absolute;
+    width: 102px;
+    overflow: hidden;
+    height: 5px;
+    top: -5px;
+    left: 0px;
+}
+
+.clear {
+  clear: both;
+}
+
+#enviromentChange1 {
+    left: 255px;
+    top: 430px;
+    width: 128px;
+    height: 73px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#enviromentChange2 {
+    left: 384px;
+    top: 430px;
+    width: 128px;
+    height: 73px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#enviroment2LoadingStatus {
+    left: 417px;
+    top: 462px;
+    width: 0px;
+    height: 7px;
+    font-weight: bold;
+    background-image: url('../interface_images/preloaderBar.png');
+    background-repeat: no-repeat;
+    position: absolute;
+}
+#enviromentChange3 {
+    left: 513px;
+    top: 430px;
+    width: 128px;
+    height: 73px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#enviroment3LoadingStatus {
+    left: 546px;
+    top: 462px;
+    width: 0px;
+    height: 7px;
+    font-weight: bold;
+    background-image: url('../interface_images/preloaderBar.png');
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+#altContent {
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    height: 506px;
+    margin: 0px 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#flashHolder {
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    height: 506px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+#mobileLink {
+    width: 200px;
+    margin: 20px auto;
+}
+#mobContainer{
+  width: 300px;
+  left: 250px;
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+#mobContainer img{
+    position: relative;
+    /*left: 297px;*/
+    top: 20px;
+}
+#icons_wrap{
+    margin: 60px auto;
+    border: 3px solid #000;
+    padding: 0px;
+    max-width: 460px;
+}
+#star_icon,#rain_icon,#fire_icon,#city_icon{
+    margin-top: -55px;
+    margin-left: 212px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    padding: 25px;
+}
+.hover:hover{
+  fill-opacity: 0.5;
+  cursor: pointer;
+}
